@@ -25,8 +25,8 @@ app.get("/generic.html", function(req, res){
     res.sendfile("generic.html"); //about 페이지
 });
 
-app.get("/elements.html", function(req, res){
-    res.sendfile("elements.html"); //요소 페이지
+app.get("/gallery.html", function(req, res){
+    res.sendfile("gallery.html"); //요소 페이지
 });
 
 app.get("/board.html", function(req, res){

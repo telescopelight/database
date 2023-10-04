@@ -273,7 +273,7 @@ hr {
   .row > .off-5 {
     margin-left: 41.66667%; }
   .row > .col-6 {
-    width: 50%; }
+    width: 80%; }
   .row > .off-6 {
     margin-left: 50%; }
   .row > .col-7 {
@@ -399,7 +399,7 @@ hr {
       .row > .off-5-xlarge {
         margin-left: 41.66667%; }
       .row > .col-6-xlarge {
-        width: 50%; }
+        width: 80%; }
       .row > .off-6-xlarge {
         margin-left: 50%; }
       .row > .col-7-xlarge {
@@ -525,7 +525,7 @@ hr {
       .row > .off-5-large {
         margin-left: 41.66667%; }
       .row > .col-6-large {
-        width: 50%; }
+        width: 80%; }
       .row > .off-6-large {
         margin-left: 50%; }
       .row > .col-7-large {
@@ -651,7 +651,7 @@ hr {
       .row > .off-5-medium {
         margin-left: 41.66667%; }
       .row > .col-6-medium {
-        width: 50%; }
+        width: 80%; }
       .row > .off-6-medium {
         margin-left: 50%; }
       .row > .col-7-medium {
@@ -777,7 +777,7 @@ hr {
       .row > .off-5-small {
         margin-left: 41.66667%; }
       .row > .col-6-small {
-        width: 50%; }
+        width: 80%; }
       .row > .off-6-small {
         margin-left: 50%; }
       .row > .col-7-small {
@@ -903,7 +903,7 @@ hr {
       .row > .off-5-xsmall {
         margin-left: 41.66667%; }
       .row > .col-6-xsmall {
-        width: 50%; }
+        width: 80%; }
       .row > .off-6-xsmall {
         margin-left: 50%; }
       .row > .col-7-xsmall {
@@ -1399,7 +1399,7 @@ ul.contact {
 ul.pagination {
   cursor: default;
   list-style: none;
-  padding-left: 0; }
+  padding-left: 10%; }
   ul.pagination li {
     display: inline-block;
     padding-left: 0;
