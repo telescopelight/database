@@ -186,7 +186,7 @@ section.notice {
 <section class="notice">
   <div class="page-title">
         <div class="container">
-            <h3>게시판</h3>
+            <h3><a href="/">게시판</a></h3>
         </div>
     </div>
 
@@ -213,13 +213,21 @@ section.notice {
 	                <tr>
 	                    <th scope="col" class="th-num">번호</th>
 	                    <th scope="col" class="th-title">제목</th>
-	                    <th scope="col" class="th-date">등록일</th>
+	                    <th scope="col" class="th-date">사용자</th>
 	                </tr>
 	                </thead>
 	                <tbody>
 					${list}
 	                </tbody>
 	            </table>
+							<!-- Write Box -->
+			<div class="col-12">
+				<ul class="actions">
+					<li><input type="button" value="Write" class="btn btn-dark" 
+						onclick="location.href='/write'"/></li>
+				</ul>
+			</div>
+
 	        </div>
 	    </div>
 

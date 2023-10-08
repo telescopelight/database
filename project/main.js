@@ -15,7 +15,6 @@ var writeRouter = require('./gallery/write');
 //글읽기
 var readRouter = require('./gallery/read');
 
-
 const app = express()
 const port = 3000
 

@@ -25,8 +25,12 @@ module.exports = {
 
 							<!-- Header -->
 								<header id="header">
-									<a href="index.html" class="logo"><strong>Gallery</strong> by HTML5 UP</a>
-
+									<a href="/" class="logo"><strong>Gallery</strong> by HTML5 UP</a>
+									
+									<ul class="icons">
+										<li><a href="/auth/login"><span class="label">Log in!</span></a></li>
+										<li><a href="/auth/register"><span class="label">Sign Up!</span></a></li>
+									</ul>
 								</header>
 
 							<!-- Content -->
