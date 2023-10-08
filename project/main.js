@@ -9,6 +9,12 @@ var authRouter = require('./lib_login/auth');
 var page = require('./main/main');
 var authCheck = require('./lib_login/authCheck.js');
 var template = require('./lib_login/template.js');
+//글쓰기
+var writeRouter = require('./gallery/write');
+//var writeTemplate = require('./gallery/template.js')
+//글읽기
+var readRouter = require('./gallery/read');
+
 
 const app = express()
 const port = 3000
@@ -35,9 +41,7 @@ app.get('/', (req, res) => {
 
 // 인증 라우터
 app.use('/auth', authRouter);
-app.use('/main', page);
-// 메인 페이지
-
+ 
 app.get('/main', (req, res) => {
   if (!authCheck.isOwner(req, res)) {  // 로그인 안되어있으면 로그인 페이지로 이동시킴
     res.redirect('/auth/login');
@@ -57,15 +61,30 @@ app.get("/generic.html", function(req, res){
     res.sendfile("generic.html"); //about 페이지
 });
 
+app.use('/write', writeRouter);
+
+//갤러리 이동 - 게시판부터 이동하도록
 app.get("/gallery.html", function(req, res){
-    res.sendfile("gallery.html"); //요소 페이지
+    res.sendfile("/write/bullet_board"); //요소 페이지
 });
 
-app.get("/board.html", function(req, res){
-    res.sendfile("board.html"); //요소 페이지
+app.get('/write', function(req, res) {
+    res.redirect("/write/writer"); //요소 페이지
+	return false;
 });
 
-
+app.get('/bullet_board', function(req, res) {
+    res.redirect("/write/bullet_board"); //요소 페이지
+	return false;
+});
+//app.use('/read', readRouter);
+/*
+app.get('/read', function(req, res) {
+	console.log(req.pathname);
+    res.redirect("/read_file?id="+req.query.id); //요소 페이지
+	return false;
+});
+*/
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
-})
+});

@@ -1,4 +1,7 @@
-<!DOCTYPE HTML>
+module.exports = {
+  HTML: function (title, user, text, authStatusUI) {
+	  return `
+	  <!DOCTYPE HTML>
 <!--
 	Editorial by HTML5 UP
 	html5up.net | @ajlkn
@@ -31,13 +34,14 @@
 										<div class="row gtr-200">
 											<div class="col-6 col-12-medium">
 												<!-- Image -->
-													<h1>Image</h1>
+													<h1>${title}</h1>
 
-													<h4>Fit</h4>
+													<h4>${user}</h4>
 													<span class="image fit"><img src="images/pic11.jpg" alt="" /></span>
 
 													<h4>Left &amp; Right</h4>
-													<p><span class="image left"><img src="images/pic01.jpg" alt="" /></span>Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+													<p><span class="image left"><img src="images/pic01.jpg" alt="" />
+													</span>${text}</p>
 													<p><span class="image right"><img src="images/pic02.jpg" alt="" /></span>Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
 
 													<!-- Write Box -->
@@ -171,3 +175,6 @@
 
 	</body>
 </html>
+	  `;
+  }
+}
